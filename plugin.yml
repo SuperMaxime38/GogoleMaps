@@ -1,0 +1,9 @@
+name: GogoleMaps
+version: 1.0
+author: SuperMaxime38
+api-version: 1.13
+main: gps.Main
+commands:
+  gpstool:
+    description: Permet de créer des points pour le GPS
+    permission: gogolemaps.cmd.tool
