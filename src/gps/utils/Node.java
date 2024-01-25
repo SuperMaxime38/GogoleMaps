@@ -94,7 +94,9 @@ public class Node {
 		}
 		Node nearest = (Node) distances.get(smallest).getValue();
 		sorted.add(nearest);
-		for(Pair p : distances) {
+		
+		List<Pair> truc = distances;
+		for(Pair p : truc) {
 			if(p.getValue().equals(nearest)) {
 				distances.remove(p);
 			}
@@ -102,9 +104,9 @@ public class Node {
 		
 		current = nearest;
 		
-		System.out.println("NEW CURRENT : " + current.toString());
+		System.out.println("NEW CURRENT : " + current.getName());
 		for(Pair p : distances) {
-			System.out.println("A DISTANCE: " + p.toString());
+			System.out.println("A DISTANCE: " + p.getKey().toString());
 		}
 		
 	}

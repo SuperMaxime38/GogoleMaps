@@ -19,7 +19,7 @@ public class Pair {
 	}
 	
 	public Object getValue() {
-		return key;
+		return value;
 	}
 	
 	public void clear() {
